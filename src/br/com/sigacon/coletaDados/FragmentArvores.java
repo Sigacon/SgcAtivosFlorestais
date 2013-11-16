@@ -119,15 +119,15 @@ public class FragmentArvores extends SherlockFragmentActivity {
             setListAdapter(new ArrayAdapter<String>(getActivity(),
                     R.layout.list_item_estrato_checkable,
                     android.R.id.text1, ListasFragment.ARVORES));
-            View estratosFrame = getActivity().findViewById(R.id.listArvores);
-            estratosFrame.setBackgroundDrawable(getResources().getDrawable(R.drawable.list_arrowlist_activate));
+            View estratosList = getActivity().findViewById(R.id.listArvores);
+            estratosList.setBackgroundDrawable(getResources().getDrawable(R.drawable.list_arrowlist_activate));
             
             // Check to see if we have a frame in which to embed the details
             // fragment directly in the containing UI.
-            View parcelasFrame = getActivity().findViewById(R.id.formArvores);
-            //parcelasFrame.setBackgroundColor(getResources().getColor(R.color.white));
+            View arvoresForm = getActivity().findViewById(R.id.formArvores);
+            arvoresForm.setBackgroundColor(getResources().getColor(R.color.white));
             
-            mDualPane = parcelasFrame != null && parcelasFrame.getVisibility() == View.VISIBLE;
+            mDualPane = arvoresForm != null && arvoresForm.getVisibility() == View.VISIBLE;
 
             if (savedInstanceState != null) {
                 // Restore last state for checked position.

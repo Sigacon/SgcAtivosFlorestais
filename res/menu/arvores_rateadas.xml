@@ -11,5 +11,5 @@
         android:orderInCategory="100"
         android:showAsAction="collapseActionView"
         android:icon="@android:drawable/ic_menu_set_as"
-        android:title="Finalizar Parcela"/>
+        android:title="Finalizar Rateio"/>
 </menu>

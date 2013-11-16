@@ -103,10 +103,9 @@ public class FragmentParcelasTabsPager extends SherlockFragmentActivity {
         	        alertDialogBuilder.setCancelable(false).setPositiveButton(R.string.sim,
         	            new DialogInterface.OnClickListener() {
         		            public void onClick(DialogInterface dialog, int id) {
-        		            	  
-                   			//Para abrir a tela do menu pode fazer assim:   
-                   			Intent intent = new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS);   
-                   			startActivityForResult(intent, 1);  
+	                   			//Para abrir a tela do menu pode fazer assim:   
+	                   			Intent intent = new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS);   
+	                   			startActivityForResult(intent, 1);  
         	                }
         	            }).setNegativeButton(R.string.nao,
         	            new DialogInterface.OnClickListener() {
@@ -127,17 +126,20 @@ public class FragmentParcelasTabsPager extends SherlockFragmentActivity {
     }
     
 	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		map = ((SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.mapParcelas)).getMap();
+	public boolean onOptionsItemSelected(MenuItem item) {	
+		Log.v("sigaLog", "menu");
  		switch (item.getItemId()) {
 	      	case android.R.id.home:
 	      		NavUtils.navigateUpTo(this, new Intent(this, MainActivity.class));
 	      		return true;
 	      	case R.id.form_parcela_save:
+	      		Log.v("sigaLog", "form_parcela_save");
 	      		Intent intent = new Intent(getApplicationContext(), FragmentArvores.class);
 	        	startActivity(intent);
+	      		//Toast.makeText(getApplicationContext(), "Teste", Toast.LENGTH_SHORT).show();
 	      		return true;
 	      	case R.id.mapType:
+	      		map = ((SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.mapParcelas)).getMap();
 	      		if(map != null){
 		      		if(mapDefault)
 			      		map.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
@@ -150,6 +152,7 @@ public class FragmentParcelasTabsPager extends SherlockFragmentActivity {
 	      		}
 	      		return true;
 	      	case R.id.myLocation:
+	      		map = ((SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.mapParcelas)).getMap();
 	      		if(map != null){
 		      		if(map.getMyLocation() != null){
 		      			Toast.makeText(getApplicationContext(), "Longitude: "+map.getMyLocation().getLongitude()+" | Latitude: "+map.getMyLocation().getLatitude() , Toast.LENGTH_SHORT).show();

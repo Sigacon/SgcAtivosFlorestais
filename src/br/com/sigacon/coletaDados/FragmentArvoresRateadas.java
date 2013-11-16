@@ -118,15 +118,16 @@ public class FragmentArvoresRateadas extends SherlockFragmentActivity {
             setListAdapter(new ArrayAdapter<String>(getActivity(),
                     R.layout.list_item_estrato_checkable,
                     android.R.id.text1, ListasFragment.ARVORES));
-            View estratosFrame = getActivity().findViewById(R.id.listRateadas);
-            estratosFrame.setBackgroundDrawable(getResources().getDrawable(R.drawable.list_arrowlist_activate));
+            
+            View rateadasList = getActivity().findViewById(R.id.listRateadas);
+            rateadasList.setBackgroundDrawable(getResources().getDrawable(R.drawable.list_arrowlist_activate));
             
             // Check to see if we have a frame in which to embed the details
             // fragment directly in the containing UI.
-            View parcelasFrame = getActivity().findViewById(R.id.formRateadas);
-            //parcelasFrame.setBackgroundColor(getResources().getColor(R.color.white));
+            View rateadasForm = getActivity().findViewById(R.id.formRateadas);
+            rateadasForm.setBackgroundColor(getResources().getColor(R.color.white));
             
-            mDualPane = parcelasFrame != null && parcelasFrame.getVisibility() == View.VISIBLE;
+            mDualPane = rateadasForm != null && rateadasForm.getVisibility() == View.VISIBLE;
 
             if (savedInstanceState != null) {
                 // Restore last state for checked position.

@@ -111,6 +111,8 @@ public class FragmentParcelasForm extends SherlockFragmentActivity {
                 Bundle savedInstanceState) {
         	
         	View v = inflater.inflate(R.layout.fragment_form_parcelas, container, false);	
+        	v.setBackgroundColor(getResources().getColor(R.color.white));
+        	
             return v;
         }
         
