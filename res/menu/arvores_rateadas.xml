@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/action_save"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:icon="@android:drawable/ic_menu_save"
+        android:title="Arvores"/>
+    <item
+        android:id="@+id/action_finish"
+        android:orderInCategory="100"
+        android:showAsAction="collapseActionView"
+        android:icon="@android:drawable/ic_menu_set_as"
+        android:title="Finalizar Parcela"/>
+</menu>
