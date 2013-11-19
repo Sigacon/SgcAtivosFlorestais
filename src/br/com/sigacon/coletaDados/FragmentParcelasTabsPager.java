@@ -89,17 +89,17 @@ public class FragmentParcelasTabsPager extends SherlockFragmentActivity {
     		@Override
     		public void run() {
     			String provider = Settings.Secure.getString(getContentResolver(), Settings.Secure.LOCATION_PROVIDERS_ALLOWED);   
-        		//Se vier null ou length == 0   é por que o GPS esta desabilitado. 
+        		//Se vier null ou length == 0   ï¿½ por que o GPS esta desabilitado. 
              
                Log.e("sigaLog", "provider "+String.valueOf(provider == null) + " ou " + ((provider.contains("gps"))?provider:"not Gps") );
                if( provider == null || !provider.contains("gps"))
                {
         	        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(FragmentParcelasTabsPager.this);
         	        // Seta o Titulo do Dialog
-        	        alertDialogBuilder.setTitle("Atenção");
+        	        alertDialogBuilder.setTitle("Atenï¿½ï¿½o");
         	        Log.e("sigaLog", "alertDialogBuilder.setTitle"); 
         	        // seta a mensagem
-        	        alertDialogBuilder.setMessage("O GPS está desativado deseja ativa-lo agora?");
+        	        alertDialogBuilder.setMessage("O GPS estï¿½ desativado deseja ativa-lo agora?");
         	        alertDialogBuilder.setCancelable(false).setPositiveButton(R.string.sim,
         	            new DialogInterface.OnClickListener() {
         		            public void onClick(DialogInterface dialog, int id) {
@@ -148,7 +148,7 @@ public class FragmentParcelasTabsPager extends SherlockFragmentActivity {
 		      		
 		      		mapDefault = !mapDefault;
 	      		}else{
-	      			Toast.makeText(getApplicationContext(), "Opção desabilitada por falta de comunicação com GPS", Toast.LENGTH_SHORT).show();
+	      			Toast.makeText(getApplicationContext(), "Opï¿½ï¿½o desabilitada por falta de comunicaï¿½ï¿½o com GPS", Toast.LENGTH_SHORT).show();
 	      		}
 	      		return true;
 	      	case R.id.myLocation:
@@ -157,10 +157,10 @@ public class FragmentParcelasTabsPager extends SherlockFragmentActivity {
 		      		if(map.getMyLocation() != null){
 		      			Toast.makeText(getApplicationContext(), "Longitude: "+map.getMyLocation().getLongitude()+" | Latitude: "+map.getMyLocation().getLatitude() , Toast.LENGTH_SHORT).show();
 		      		}else{
-		      			Toast.makeText(getApplicationContext(), "Sua localização ainda não foi encontrada tente novamente em alguns segundos", Toast.LENGTH_SHORT).show();
+		      			Toast.makeText(getApplicationContext(), "Sua localizaï¿½ï¿½o ainda nï¿½o foi encontrada tente novamente em alguns segundos", Toast.LENGTH_SHORT).show();
 		      		}
 		 		}else{
-		  			Toast.makeText(getApplicationContext(), "Opção desabilitada por falta de comunicação com GPS", Toast.LENGTH_SHORT).show();
+		  			Toast.makeText(getApplicationContext(), "Opï¿½ï¿½o desabilitada por falta de comunicaï¿½ï¿½o com GPS", Toast.LENGTH_SHORT).show();
 		  		}
 	      		return true;
 	   }
@@ -259,7 +259,10 @@ public class FragmentParcelasTabsPager extends SherlockFragmentActivity {
         @Override
         public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
         }
-
+        @Override 
+        public float getPageWidth(int position) {
+            return(0.9f); 
+        }
         @Override
         public void onPageSelected(int position) {
             // Unfortunately when TabHost changes the current tab, it kindly
