@@ -64,7 +64,7 @@ public class FragmentParcelasTabsPager extends SherlockFragmentActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.fragment_tabs_pager);
-        setTitle("Dados parcela");
+        setTitle(R.string.dados_parcela);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
         
