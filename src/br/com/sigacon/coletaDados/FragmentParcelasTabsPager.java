@@ -96,10 +96,10 @@ public class FragmentParcelasTabsPager extends SherlockFragmentActivity {
                {
         	        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(FragmentParcelasTabsPager.this);
         	        // Seta o Titulo do Dialog
-        	        alertDialogBuilder.setTitle("Aten��o");
+        	        alertDialogBuilder.setTitle(R.string.atencao);
         	        Log.e("sigaLog", "alertDialogBuilder.setTitle"); 
         	        // seta a mensagem
-        	        alertDialogBuilder.setMessage("O GPS est� desativado deseja ativa-lo agora?");
+        	        alertDialogBuilder.setMessage(R.string.gps_desativado);
         	        alertDialogBuilder.setCancelable(false).setPositiveButton(R.string.sim,
         	            new DialogInterface.OnClickListener() {
         		            public void onClick(DialogInterface dialog, int id) {
@@ -148,7 +148,7 @@ public class FragmentParcelasTabsPager extends SherlockFragmentActivity {
 		      		
 		      		mapDefault = !mapDefault;
 	      		}else{
-	      			Toast.makeText(getApplicationContext(), "Op��o desabilitada por falta de comunica��o com GPS", Toast.LENGTH_SHORT).show();
+	      			Toast.makeText(getApplicationContext(), R.string.opcao_desabilitada_gps, Toast.LENGTH_SHORT).show();
 	      		}
 	      		return true;
 	      	case R.id.myLocation:
@@ -157,10 +157,10 @@ public class FragmentParcelasTabsPager extends SherlockFragmentActivity {
 		      		if(map.getMyLocation() != null){
 		      			Toast.makeText(getApplicationContext(), "Longitude: "+map.getMyLocation().getLongitude()+" | Latitude: "+map.getMyLocation().getLatitude() , Toast.LENGTH_SHORT).show();
 		      		}else{
-		      			Toast.makeText(getApplicationContext(), "Sua localiza��o ainda n�o foi encontrada tente novamente em alguns segundos", Toast.LENGTH_SHORT).show();
+		      			Toast.makeText(getApplicationContext(), R.string.localizacao_nao_encontrada, Toast.LENGTH_SHORT).show();
 		      		}
 		 		}else{
-		  			Toast.makeText(getApplicationContext(), "Op��o desabilitada por falta de comunica��o com GPS", Toast.LENGTH_SHORT).show();
+		  			Toast.makeText(getApplicationContext(), R.string.opcao_desabilitada_gps, Toast.LENGTH_SHORT).show();
 		  		}
 	      		return true;
 	   }

@@ -34,5 +34,9 @@
 	<string name="tipo_mapa">Tipo de mapa</string>
 	<string name="mapa">Mapa</string>
 	<string name="formulario_parcela">Formulario parcela</string>
+	<string name="atencao">Atenção</string>
+	<string name="gps_desativado">O GPS está desativado, deseja ativa-lo agora?</string>
+	<string name="opcao_desabilitada_gps">Opção desabilitada por falta de comunicação com o GPS</string>
+	<string name="localizacao_nao_encontrada">Sua localização ainda não foi encontrada, tente novamente em alguns segundos</string>
 
 </resources>
