@@ -3,11 +3,12 @@
 	<item
 		android:id="@+id/mapType"
 		android:showAsAction="always"
-		android:icon="@android:drawable/ic_menu_mapmode" />
+		android:icon="@android:drawable/ic_menu_mapmode"
+		android:title="@string/tipo_mapa" />
 	<item
 		android:id="@+id/myLocation"
 		android:showAsAction="ifRoom"
 		android:icon="@android:drawable/ic_menu_mylocation" 
-		android:title="Meu local"/>
+		android:title="@string/meu_local"/>
 
 </menu>

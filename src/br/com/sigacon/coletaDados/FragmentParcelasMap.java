@@ -130,7 +130,7 @@ public class FragmentParcelasMap extends SherlockFragmentActivity {
 	            map.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
 	            map.addMarker(new MarkerOptions()
 	                    .title("Parcela")
-	                    .snippet("Possição: -24.112151,-49.31387")
+	                    .snippet("PossiÃ§Ã£o: -24.112151,-49.31387")
 	                    .position(frameworkSystemLocation));
             }
             return v;

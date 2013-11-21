@@ -4,5 +4,5 @@
         android:id="@+id/form_parcela_save"
         android:showAsAction="always"
         android:icon="@android:drawable/ic_menu_save"
-        android:title="Salvar"/>
+        android:title="@string/salvar"/>
 </menu>

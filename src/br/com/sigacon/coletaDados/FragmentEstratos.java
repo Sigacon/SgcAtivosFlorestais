@@ -46,7 +46,7 @@ public class FragmentEstratos extends SherlockFragmentActivity {
         super.onCreate(savedInstanceState);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
-        setTitle("Estratos");
+        setTitle(R.string.estratos);
         setContentView(R.layout.fragment_layout_estratos);
     }
 

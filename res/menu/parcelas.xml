@@ -5,5 +5,5 @@
         android:orderInCategory="100"
         android:showAsAction="always"
         android:icon="@android:drawable/ic_menu_save"
-        android:title="Arvores"/>
+        android:title="@string/arvores"/>
 </menu>

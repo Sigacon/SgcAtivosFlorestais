@@ -75,9 +75,9 @@ public class FragmentParcelasTabsPager extends SherlockFragmentActivity {
 
         mTabsAdapter = new TabsAdapter(this, mTabHost, mViewPager);
 
-        mTabsAdapter.addTab(mTabHost.newTabSpec("maps").setIndicator("Mapa"),
+        mTabsAdapter.addTab(mTabHost.newTabSpec("maps").setIndicator(getString(R.string.mapa)),
         		FragmentParcelasMap.CountingFragment.class, null);
-        mTabsAdapter.addTab(mTabHost.newTabSpec("form").setIndicator("Formulario parcela"),
+        mTabsAdapter.addTab(mTabHost.newTabSpec("form").setIndicator(getString(R.string.formulario_parcela)),
                 FragmentParcelasForm.CountingFragment.class, null);
 
         if (savedInstanceState != null) {

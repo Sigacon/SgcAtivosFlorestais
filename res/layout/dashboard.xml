@@ -30,7 +30,7 @@
 		    <TextView
 		        android:layout_width="wrap_content"
 		        android:layout_height="wrap_content"
-		        android:text="Importar Dados"
+		        android:text="@string/importar_dados"
 		        android:textColor="@color/blue_dark" />
 		</LinearLayout>
 
@@ -49,7 +49,7 @@
 			    android:clickable="true"
 		        android:contentDescription="teste"/>
 	        <TextView  
-		        android:text="Exportar Dados"
+		        android:text="@string/exportar_dados"
 		        android:layout_width="wrap_content"
 		        android:layout_height="wrap_content" 
 		        android:textColor="@color/blue_dark"/> 
@@ -78,7 +78,7 @@
 			    android:clickable="true"
 		        android:contentDescription="teste"/>	
 	        <TextView 
-		        android:text="Coletar Dados"
+		        android:text="@string/coletar_dados"
 		        android:layout_width="wrap_content"
 		        android:layout_height="wrap_content" 
 		        android:textColor="@color/blue_dark"/> 
@@ -98,7 +98,7 @@
 			    android:clickable="true"
 		        android:contentDescription="teste"/>
 	        <TextView  
-		        android:text="Configurações"
+		        android:text="@string/configuracoes"
 		        android:layout_width="wrap_content"
 		        android:layout_height="wrap_content" 
 		        android:textColor="@color/blue_dark"/> 

@@ -17,5 +17,22 @@
 	<string name="practice_x3">Where you go with practice, practice, practice</string>
 	<string name="downtown_club">The Downtown Club</string>
 	<string name="heisman_trophy">Original home of the Heisman Trophy</string>
+	<string name="arvores_rateadas">Arvores rateadas</string>
+	<string name="estratos">Estratos</string>
+	<string name="dados_parcela">Dados parcela</string>
+	<string name="importar_dados">Importar dados</string>
+	<string name="exportar_dados">Exportar dados</string>
+	<string name="coletar_dados">Coletar dados</string>
+	<string name="configuracoes">Configurações</string>
+	<string name="selecione_o_arquivo">Selecione o arquivo</string>
+	<string name="importar">Importar</string>
+	<string name="arvores">Arvores</string>
+	<string name="finalizar_rateio">Finalizar rateio</string>
+	<string name="finalizar_parcela">Finalizar parcela</string>
+	<string name="salvar">Salvar</string>
+	<string name="meu_local">Meu local</string>
+	<string name="tipo_mapa">Tipo de mapa</string>
+	<string name="mapa">Mapa</string>
+	<string name="formulario_parcela">Formulario parcela</string>
 
 </resources>

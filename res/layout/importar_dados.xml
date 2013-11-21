@@ -17,7 +17,7 @@
         android:focusable="false"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Selecione o Arquivo"
+        android:text="@string/selecione_o_arquivo"
         android:onClick="chooseFile"
         android:ems="10" >
         <requestFocus />
@@ -27,6 +27,6 @@
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Importar" />
+        android:text="@string/importar" />
 
 </LinearLayout>

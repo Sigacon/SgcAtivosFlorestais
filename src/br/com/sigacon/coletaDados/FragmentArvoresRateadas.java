@@ -49,7 +49,7 @@ public class FragmentArvoresRateadas extends SherlockFragmentActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
 
-        setTitle("Arvores Rateadas");
+        setTitle(R.string.arvores_rateadas);
         setContentView(R.layout.fragment_layout_arvores_rateadas);
     }
 
